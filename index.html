@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: #E5E5E5;
+  padding: 0;
+  margin: 0;
+  width: 1300px;
+  font-family: Roboto, sans-serif;
+}
+/************ header *************/
+
+.header {
+  position: relative;
+  height: 70px;
+  width: 1300px;
+  background-color: #2DC033;
+  color: #FFFFFF;
+}
+.header-name {
+  position: absolute;
+  left: 64px;
+  top: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  width: 264px;
+}
+.spot {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  margin-right: 70px;
+
+  line-height: 18px;
+  font-size: 16px;
+}
+.arrow {
+  position: absolute;
+  width: 4.07px;
+  height: 0;
+  border: 0.5px solid #FFFFFF;
+  transform: rotate(45deg);
+  top: 33px;
+  right: 54px;
+}
+.arrow2 {
+  position: absolute;
+  width: 4.07px;
+  height: 0;
+  border: 0.5px solid #FFFFFF;
+  transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  top: 33px;
+  right: 50px;
+}
+
+/***************** main ****************/
+
+#block1 {
+float: left;
+display: block;
+width: 560px;
+border: 1px solid blue;
+margin: 0;
+margin-left:64px;
+background: rgba(255, 255, 255, 1);
+border-radius: 8px;
+
+
+}
+
+#block2 {
+float: left;
+display: block;
+width: 560px;
+border: 1px solid blue;
+margin: 0;
+margin-left:57px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 1);
+
+
+
+}
+#block3 {
+  float: left;
+  display: block;
+  width: 560px;
+  border: 1px solid blue;
+  color: rgba(51, 51, 51, 1);
+  margin: 0;
+  margin-left:64px;
+  height: 19px;
+  margin-top:51px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+#block4 {
+  float: left;
+  display: block;
+  width: 560px;
+  border: 1px solid blue;
+  color: rgba(51, 51, 51, 1);
+  padding-left: ;
+  margin: 0;
+  margin-left:55px;
+  height: 19px;
+  margin-top:51px;
+  margin-bottom:30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+ }
+
+#block5 {
+  float: left;
+  display: block;
+  width: 560px;
+  border: 1px solid blue;
+  margin: 0;
+  margin-left:64px;
+  margin-top:42.5px;
+
+}
+h1 {
+	margin: 0;
+    margin-left: 46px;
+    margin-top: 51px;
+
+}
+
+table {
+  width: 453px;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: 46px;
+  margin-top: 28px;
+  height: 149px;
+  background: #fff;
+
+}
+table thead {
+  height: 39px;
+  border-radius: 8px;
+}
+
+table thead tr  {
+  background: linear-gradient(90.5deg, rgba(143, 213, 28, 0.2) 0%, rgba(143, 213, 28, 0.2) 0.01%, rgba(255, 194, 60, 0.16) 46.95%, rgba(253, 134, 255, 0.1) 100.16%) no-repeat;
+  border-radius: 8px;
+  font-size:14px;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: ;
+
+
+}
+
+table tr td {
+  color: rgba(123, 123, 123, 1);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tbottom {
+	  margin: 0;
+    margin-left: 46px;
+    margin-right: 61px;
+    height: 119px;
+
+}
+
+hr {
+  height: 4px;
+  background-color: #E5E5E5;
+  border: none;
+}
+
+.wrapper {
+  display: inline-block;
+}
+.btn-add {
+  width: 123px;
+  height: 40px;
+  padding: 2px;
+  background: #34BC48;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+#quantity {
+  width: 140px;
+  height: 30;
+}
+.btnn-l{
+  margin: 0;
+}
+#profit {
+  width: 218px;
+
+}
+
+</style>
+</head>
+<body>
+<header class="header">
+    <div class="header-name">Калькулятор расчёта среднего</div>
+    <div class="spot">SPOT</div>
+    <div class="arrow"></div>
+    <div class="arrow2"></div>
+  </header>
+  <div id="block3">Точка входа
+   </div>
+  <div id="block4">Точка выхода
+  </div>
+
+
+<div id="block1">
+
+
+<table>
+<thead>
+  <tr>
+    <th>количество акций</th>
+    <th>цена покупки</th>
+    <th>сумма</th>
+    <th></th>
+  </tr>
+</thead>
+  <tr>
+    <td>10</td>
+    <td>210$</td>
+    <td>2100$</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>205$</td>
+    <td>2050</td>
+    <td>Х</td>
+  </tr>
+</table>
+	<hr>
+<table class="tbottom">
+	<tr>
+    <td id="quantity">1 шт. <button>+</button><button>-</button></td>
+    <td>215,3$</td>
+    <td><button class="btn-add">Добавить</button></td>
+    </tr>
+</table>
+</div>
+
+<div id="block2">
+
+
+<table>
+ <thead>
+  <tr>
+   <th>количество акций</th>
+    <th>цена покупки</th>
+    <th>сумма</th>
+    <th></th>
+  </tr>
+</thead>
+  <tr>
+    <td>5</td>
+    <td>215$</td>
+    <td>1075</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>220$</td>
+    <td>220$</td>
+    <td>X</td>
+  </tr>
+</table>
+<hr>
+<table class="tbottom">
+	<tr>
+    <td>1 шт. <button>+</button><button>-</button></td>
+    <td>215,3$</td>
+    <td><button class="btn-add">Добавить</button></td>
+    </tr>
+</table>
+
+</div>
+<div id="block5">
+	<div class="wrapper">
+    	<div class="wrapper"><button class="btn-l">Среднее</button>
+        </div>
+        <div class="wrapper"><button class="btn-l">Усреднение позиций</button>
+        </div>
+
+    </div>
+    <div>Средняя цена позиции: 207,5 $</div>
+
+      <div class="wrapper">
+        <p><label for="price">Текущая цена</label></p>
+        <input type="text" name="price" id="price">
+      </div>
+      <div class="wrapper">
+        <p>Текущий профит</p>
+        <div id="profit">+ 2200$</div>
+      </div>
+
+
+
+</div>
+
+
+
+</body>
+</html>
